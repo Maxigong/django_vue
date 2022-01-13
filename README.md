@@ -1,7 +1,7 @@
 # Learn Django Vue
 
-Clone this repo and practices how to work with Django and Vue.
-The project is configured in a way that django can also serve vue templates in port 127.0.0.1:8000
+Clone this repo and practices how to work together with Django and Vue.
+The project is configured in a way that django can also serve Vue in port 127.0.0.1:8000
 
 The idea is comming from this repo
 
@@ -43,6 +43,13 @@ Runserver
 ```
 python manage.py runserver
 ```
+
+### Django apps
+ Django is configured but there are no apps, create one as always
+ 
+ ```
+ python manage.py startapp APPNAME
+ ```
 ## 4. Vue
 
 ### Navegate inside the frontend folder
