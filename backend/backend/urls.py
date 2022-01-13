@@ -6,5 +6,5 @@ from .views import IndexTemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    re_path(r"^.*$", IndexTemplateView.as_view(), name="entry-point"),
-]
+    re_path(r"^(?!media).*$", IndexTemplateView.as_view(), name="entry-point")
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
